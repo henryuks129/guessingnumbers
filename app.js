@@ -11,7 +11,7 @@ let resetBtn = document.querySelector('.reset-btn')
     let colors = ['red','purple','green','yellow','blue','violet','black','teal','aquamarine','coral','yellowgreen','brown','white','indigo']
     let randomColors = Math.ceil(Math.random() * colors.length)
     console.log(randomColors);
-    let randomNumbers = Math.ceil(Math.random() * 10)
+    let randomNumbers = Math.ceil(Math.random() * 10 )
     console.log(randomNumbers);
 
     if(!userNumber){
@@ -19,10 +19,10 @@ let resetBtn = document.querySelector('.reset-btn')
     }else if(randomNumbers === Number(userNumber)){
        result.innerText =  `CONGRATULATIONS🏆! Your Guess Is correct ${randomNumbers}`
        body.backgroundColor = colors[randomColors]
-    }else if(randomNumbers < Number(userNumber)){
+    }else if(randomNumbers > Number(userNumber)){
         result.innerText = `Your guess lesser than my guess😜:${randomNumbers}❗️.Better Luck Next Time!`
         body.backgroundColor = 'red'
-    }else if(randomNumbers > Number(userNumber)){
+    }else if(randomNumbers < Number(userNumber)){
         result.innerText = `Your guess is greater than my guess🤪:${randomNumbers}❗️. Better Luck Next Time!`
         body.backgroundColor = 'beige'
     }
