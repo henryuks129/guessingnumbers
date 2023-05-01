@@ -11,7 +11,7 @@ let resetBtn = document.querySelector('.reset-btn')
     let colors = ['red','purple','green','yellow','blue','violet','black','teal','aquamarine','coral','yellowgreen','brown','white','indigo']
     let randomColors = Math.ceil(Math.random() * colors.length)
     console.log(randomColors);
-    let randomNumbers = Math.ceil(Math.random() * 1)
+    let randomNumbers = Math.ceil(Math.random() * 10)
     console.log(randomNumbers);
 
     if(!userNumber){
