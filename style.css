@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    place-content: center;
+    flex-direction: column;
+    /* place-items: center; */
+    height: 80vh;
+    border: 1px solid black;
+}
+
+#userInput{
+    width: 20rem;
+    height: 3rem;
+}
+
+#userInput::placeholder{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+   
+}
+
+#display{
+    font-size: 2rem;
+}
+
+.reset-btn , .submit-btn{
+    width: 20rem;
+    background-color: blue;
+    color: white;
+    height: 2.5rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+
+.inner-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
